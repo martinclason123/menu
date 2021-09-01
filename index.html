@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/30b7669a5d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="mc-custom-nav-mobile">
+        <div class="mc-mobile-menu-top-grid-left">
+            <a href="https://karasclaws.com/account"><span class="mc-horizontal-menu-icons"><i
+                        class="far fa-user"></i></span></a>
+            <a href="https://karasclaws.com/cart"><span class="mc-horizontal-menu-icons"><i
+                        class="fas fa-shopping-bag"></i></span></a>
+        </div>
+        <div class="mc-mobile-menu-top-grid-center"><a href="https://karasclaws.com/"><img id="mc-mobile-top-menu-logo"
+            src="https://i.ibb.co/4ZgsB25/kc-logo-white-01-01.png"></a></div>
+        <div class="mc-mobile-menu-top-grid-right">
+            <span id="mc-mobile-menu-close" onclick="toggle_mc_mobile_menu()"><i class="fas fa-times"></i></span>
+            <span id="mc-cust-mobile-burg" onclick="toggle_mc_mobile_menu()">
+                <i class="fas fa-bars"></i>
+            </span>
+
+        </div>
+    </div>
+    </div>
+    <div id="mc-mobile-ul-hidden">
+        <ul id="mc-top-menu">
+
+            <li onclick="showCustDropdown(event)" class="mc-top-li">
+                Dips <span class="mc-plus">+</span><span class="mc-minus">-</span>
+                <ul class="mc-cust-hidden">
+                    <a href="https://karasclaws.com/collections/foills"></a>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/foills">Foils</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/uv-thermals">Thermals/UV</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/chameleon">Chrome/Chameleon</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/solid-shimmer">Solid/Shimmer</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/chunky-glitters">Glitter</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/collections/trios-and-collections">Trios and
+                            Collections</a>
+                    </li>
+                </ul>
+            </li>
+            <li onclick="showCustDropdown(event)">
+                Accessories <span class="mc-plus">+</span><span class="mc-minus">-</span>
+                <ul class="mc-cust-hidden">
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/products/swatch-sticks">Swatch Sticks</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a"
+                            href="https://karasclaws.com/products/pointy-stainless-steel-picker-pen">Cuticle Cleanup
+                            Tool</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/products/stipple-brush">Fluffy Nail Brush</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/products/nail-cleaning-brushes">Nail
+                            Brushes</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/products/glass-nail-file-manicure-set">Ergo
+                            File</a>
+                    </li>
+                    <li class="mc-cust-hidden-li">
+                        <a class="mc-menu-a" href="https://karasclaws.com/products/liquid-set">Dip Liquid Sets</a>
+                    </li>
+                </ul>
+            <li>
+                <a class="mc-top-menu-a" href="https://karasclaws.com/pages/tutorials">
+                    Tutorials
+                </a>
+            </li>
+            <li>
+                <a class="mc-top-menu-a" href="https://karasclaws.com/pages/contact">
+                    Contact
+                </a>
+            </li>
+            <li>
+                <a class="mc-top-menu-a" href="https://karasclaws.com/pages/contact-about-us">
+                    About
+                </a>
+            </li>
+            </li>
+        </ul>
+    </div>
+    <div class="mc-custom-nav-desktop">
+        <ul class="mc-desktop-horizontal-list">
+            <div class="mc-dropdown">
+                <li class="mc-horizontal-li">Dips</li>
+                <div class="mc-dropdown-content">
+                    <div class="mc-dropdown-shop-links">
+                        <a class="mc-horizontal-dropdown-header"
+                            href="https://karasclaws.com/collections/trios-and-collections">Collections & Trios</a>
+                        <a class="mc-divider-link" href="">
+                            <div class="mc-horizontal-dropdown-divider"></div>
+                        </a>
+                        <a href="https://karasclaws.com/products/fall-collection">Fall Collection</a>
+                        <a href="https://karasclaws.com/products/nightmare-before-christmas-collection">Nightmare Before
+                            Christmas Collection</a>
+                        <a href="https://karasclaws.com/products/fall-trio">Evening Soirée</a>
+                        <a href="https://karasclaws.com/products/copy-of-autumn-wedding">All That Glitters</a>
+                        <a href="https://karasclaws.com/products/gold-digger">Gold Digger</a>
+                        <a href="https://karasclaws.com/products/autumn-wedding">Autumn Wedding</a>
+                    </div>
+                    <div class="mc-dropdown-shop-links">
+                        <a class="mc-horizontal-dropdown-header" href="https://karasclaws.com/collections/all">Types</a>
+                        <a class="mc-divider-link" href="">
+                            <div class="mc-horizontal-dropdown-divider"></div>
+                        </a>
+                        <a href="https://karasclaws.com/collections/foills">Foils</a>
+                        <a href="https://karasclaws.com/collections/uv-thermals">Thermal/UV</a>
+                        <a href="https://karasclaws.com/collections/chameleon">Chrome/Chameleon</a>
+                        <a href="https://karasclaws.com/collections/solid-shimmer">Solid/Shimmer</a>
+                        <a href="https://karasclaws.com/collections/chunky-glitters">Glitters</a>
+                    </div>
+                    <div class="mc-dropdown-shop-image">
+                        <a href="https://karasclaws.com/products/fall-collection">
+                            <img src="https://i.ibb.co/X8fW0pr/fall-collection-square-01.jpg" alt="">
+                            <h4>Fall Collection</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mc-dropdown-accessories">
+                <li class="mc-horizontal-li">Accessories</li>
+                <div class="mc-dropdown-content-accessories">
+                    <div class="mc-dropdown-shop-links">
+                        <a class="mc-horizontal-dropdown-header">Accessories</a>
+                        <a class="mc-divider-link" href="">
+                            <div class="mc-horizontal-dropdown-divider"></div>
+                        </a>
+                        <a href="https://karasclaws.com/products/swatch-sticks">Swatch Sticks</a>
+                        <a href="https://karasclaws.com/products/pointy-stainless-steel-picker-pen">Cuticle Cleanup
+                            Tool</a>
+                        <a href="https://karasclaws.com/products/stipple-brush">Fluffy Brush</a>
+                        <a href="https://karasclaws.com/products/nail-cleaning-brushes">Nail Brushes</a>
+                        <a href="https://karasclaws.com/products/glass-nail-file-manicure-set">Ergo File</a>
+                        <a href="https://karasclaws.com/products/liquid-set">Dip Liquid Set</a>
+                    </div>
+                    <div class="mc-accessories-images">
+
+                        <a href="https://karasclaws.com/products/liquid-set">
+
+                            <img class="mc-accessories-image" src="https://i.ibb.co/Nrrg4v8/Saviland1.jpg" alt="">
+                            <h4>Dip Liquid Set</h4>
+                        </a>
+                        <a href="https://karasclaws.com/products/swatch-sticks">
+
+                            <img class="mc-accessories-image" src="https://i.ibb.co/7YhmNRR/swatch.jpg" alt="">
+                            <h4>Swatch sticks</h4>
+                        </a>
+                        <a href="https://karasclaws.com/products/pointy-stainless-steel-picker-pen">
+
+                            <img class="mc-accessories-image" src="https://i.ibb.co/k0BPJKL/picker.jpg" alt="">
+                            <h4>Cuticle Cleanup Tool</h4>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <li class="mc-horizontal-li" id="mc-horizontal-logo"><img
+                    src="https://i.ibb.co/4ZgsB25/kc-logo-white-01-01.png"></li>
+            <li class="mc-horizontal-li">Tutorials</li>
+            <li class="mc-horizontal-li">Contact</li>
+            <li class="mc-horizontal-li">
+            <div class="mc-horizontal-menu-icons-container">
+                <a href="https://karasclaws.com/account"><span class="mc-horizontal-menu-icons"><i
+                            class="far fa-user"></i></span></a>
+                <a href="https://karasclaws.com/cart"><span class="mc-horizontal-menu-icons"><i
+                            class="fas fa-shopping-bag"></i></span></a>
+            </div>
+        </li>
+        </ul>
+    </div>
+    <div>
+        <p>Some content</p>
+    </div>
+
+</body>
+<script src="/index.js"></script>
+
+</html>
